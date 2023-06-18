@@ -1,0 +1,52 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,700;0,800;0,900;1,100&display=swap";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100%;
+  background: #000;
+}
+h2{
+  font-size: 6rem;
+  font-weight: 500;
+  color: #2c2a2a;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  cursor: pointer;
+  span{
+    transition: 0.7s;
+  }
+  &:hover{
+    color: #fff;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #56b84d, 0 0 70px #56b84d, 0 0 80px #56b84d, 0 0 100px #56b84d, 0 0 150px #56b84d;
+    span{
+      &:nth-child(odd){
+      color: rgba(217, 187, 214, 0.8);
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+      } 
+    }
+  }
+}
+@media screen and (max-width: 780px) {
+  h2{
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  h2{
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  h2{
+    font-size: 1.5rem;
+  }
+}
